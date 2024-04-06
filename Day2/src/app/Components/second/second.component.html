@@ -1,0 +1,12 @@
+<!-- image-slider.component.html -->
+
+<div class="image-slider">
+    <img [src]="images[index]" alt="Slide Image">
+</div>
+<div class="controls">
+  <button (click)="prevImage()">Previous</button>
+  <button (click)="stopSlide()">Stop</button>
+  <button (click)="startSlide()">Start</button>
+  <button (click)="nextImage()">Next</button>
+</div>
+  

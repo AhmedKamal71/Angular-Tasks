@@ -1,0 +1,25 @@
+/* image-slider.component.css */
+
+.image-slider {
+    position: relative;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  img{
+    width: 800px;
+    border-radius: 10px;
+  }
+  
+  .controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  button {
+    margin: 0 5px;
+  }
+  
