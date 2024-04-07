@@ -1,0 +1,16 @@
+<div class="container">
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tbody>
+            @for(std of FromParent; track std.Name ){
+                <tr>
+                    <td>{{std.Name}}</td>
+                    <td>{{std.Age}}</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

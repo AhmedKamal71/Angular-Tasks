@@ -1,0 +1,15 @@
+<div class="container">
+    <input type="text" [(ngModel)]="name" placeholder="Name">
+    @if(name.length < 3 && name){
+        <div style="color: red; font-weight: bold;">Student Name Must Be More Than 3 characters!</div>
+    }@else if(name){
+        <div style="color: green; font-weight: bold;">Valid Student Name</div>
+    }
+    <input type="text" [(ngModel)]="age" placeholder="Age">
+    @if(+age < 10 && +age){
+        <div style="color: red; font-weight: bold;">Student Age Must Be More Than 3 Years!</div>
+    }@else if(age){
+        <div style="color: green; font-weight: bold;">Valid Student Age</div>
+    }
+    <input type="button" (click)="Send()" value="Send" >
+</div>
