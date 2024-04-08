@@ -1,0 +1,19 @@
+<div class="row g-3 container">
+    <form [formGroup]="form">
+        <div class="col">
+            <input formControlName="Name" type="text" class="form-control" placeholder="Student Name">
+        </div>
+        @if(form.controls["Name"].valid == false && form.controls["Name"]){
+            <div class="mess">Name Not Valid</div>
+        }
+        <div class="col">
+            <input formControlName="Age" type="number" class="form-control" placeholder="Student Age" >
+        </div>
+        @if(form.controls["Age"].valid == false){
+            <div class="mess">Age Not Valid</div>
+        }
+        <div class="col">
+            <input (click)="GetData()" type="submit" value="Submit" class="btn btn-primary">
+        </div>
+    </form>
+  </div>
