@@ -1,0 +1,35 @@
+<!-- <div>
+    <p>{{student.name}}</p>
+    <p>{{student.email}}</p>
+</div> -->
+<div class="parent">
+  <div class="card text-bg-success mb-3 m-auto" style="max-width: 18rem">
+    <div class="card-header"><span>Name: </span> {{ student.name }}</div>
+    <div class="card-body">
+      <p class="card-text">
+        <span>Email: </span>
+        <a routerLink="/students/{{ student.id }}">{{ student.email }}</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<style>
+  span {
+    font-size: larger;
+    font-weight: bold;
+  }
+  .parent {
+    margin-top: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+  }
+  a:hover {
+    color: red;
+  }
+
+</style>

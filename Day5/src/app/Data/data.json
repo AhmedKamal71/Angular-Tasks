@@ -1,0 +1,67 @@
+{
+  "Students": [
+    {
+      "name": "Ahmed Kamal",
+      "email": "oudaa898@gmail.com",
+      "age": 23,
+      "phone": 55545454545,
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Osama Lotfy",
+      "email": "osama@gmail.com",
+      "age": 15,
+      "phone": 64812152
+    },
+    {
+      "name": "Karim Reda",
+      "email": "alaa@gmail.com",
+      "age": 26,
+      "phone": 69466465,
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "name": "Elsayed Hassan",
+      "email": "Elsayed@gmail.com",
+      "age": 17,
+      "phone": 95101152
+    },
+    {
+      "id": "5",
+      "name": "Kareem Mohamed",
+      "email": "Kareem@gmail.com",
+      "age": 19,
+      "phone": 32215787
+    },
+    {
+      "id": "6",
+      "name": "Sara Ahmed",
+      "email": "Sara@gmail.com",
+      "age": 21,
+      "phone": 12348765
+    },
+    {
+      "id": "7",
+      "name": "Magdy Ahmed",
+      "email": "magdy@gmail.com",
+      "age": 22,
+      "phone": 89565962
+    },
+    {
+      "id": "8",
+      "name": "Elsayed Osama",
+      "email": "elsyed@gmail.com",
+      "age": 18,
+      "phone": 12521533
+    },
+    {
+      "id": "5676",
+      "name": "Ahmed Kamal Mohamed Elsayed",
+      "email": "oudaa898@gmail.com",
+      "age": 11,
+      "phone": 51551515
+    }
+  ]
+}

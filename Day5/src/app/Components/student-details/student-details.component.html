@@ -1,0 +1,62 @@
+@if(student){
+
+<div class="parent">
+    <h4>{{student.name}}'s Detailes</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>{{student.id}}</td>
+                    <td>{{student.name}}</td>
+                    <td>{{student.age}}</td>
+                    <td>{{student.email}}</td>
+                    <td>{{student.phone}}</td>
+                    <td>
+                        <a routerLink="/update/{{student.id}}" type="button" class="btn btn-success">Update</a>
+                        <a type="button" (click)="Delete()" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+}
+
+
+<style>
+    table{
+        border: 3px solid green;
+        width: 75%;
+        margin: auto;
+        text-align: center;
+        
+    }
+    td,th{
+        border: 3px solid green;
+        width: 150px;
+        height: 50px;
+    }
+    .parent{
+        margin: auto;
+        width: 100%;
+        margin-top: 10px;
+    }
+    h4{
+        text-align: center;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    a{
+        width: 70px;
+        font-size: small;
+        margin-left: 5px;
+    }
+</style>

@@ -1,0 +1,65 @@
+<div class="parent">
+    <form action="">
+        <label for="name">Name</label>
+        <input [(ngModel)]="name" type="text" id="name" name="name">
+        @if(name.length < 3 && name){
+            <div style="color: red;">Invalid Student Name</div>
+        }
+        @else if(name.length >= 3 && name){
+            <div style="color: green;">Valid Student Name</div>
+        }
+        <label for="email">Email</label>
+        <input [(ngModel)]="email" type="email" id="email" name="email">
+        <label for="age">Age</label>
+        <input [(ngModel)]="age" type="number" id="age" name="age">
+        @if(age < 10 && age){
+            <div style="color: red;">Invalid Student Age</div>
+        }
+        @else if(age >= 10  && age){
+            <div style="color: green;">Valid Student Age</div>
+        }
+        <label for="phone">Phone</label>
+        <input [(ngModel)]="phone" type="number" id="phone" name="phone">
+    </form>
+    <input class="add btn btn-success" type="button" id="submit" (click)="Update()" name="submit" value="Update">
+</div>
+
+<style>
+    form{
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        width: 40%;
+        margin: auto;
+        margin-top: 20px;
+        height: 80%;
+    }
+    .add{
+        margin: auto;
+        display: flex;
+        margin-top: 10px;
+        background-color: green;
+        color: white;
+        font-weight: bold;
+    }
+    .add:hover{
+        background-color: rgb(153, 224, 46);
+    }
+    .parent{
+        border: 3px green solid;
+        width: 40%;
+        margin: auto;
+        padding-bottom: 10px;
+        margin-top: 20px;
+        border-radius: 15px;
+        height: 500px;
+    }
+    input{
+        border-radius: 10px;
+        padding-top: 5px;
+    
+    }
+    label{
+        font-weight: bold;
+    }
+</style>
